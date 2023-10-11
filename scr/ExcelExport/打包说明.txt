@@ -1,0 +1,11 @@
+c#打包
+控制台安装工具：
+dotnet tool install --global dotnet-warp
+在工程目录执行下列命令打包：
+dotnet-warp
+
+python打包：
+控制台安装工具：
+pip3 install pyinstaller
+在脚本目录执行命令进行打包：
+pyinstaller -F 脚本名字.py

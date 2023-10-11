@@ -1,0 +1,5358 @@
+[
+  {
+    "Name": "monster",
+    "DataBase": "mir3",
+    "Columns": [
+      {
+        "Name": "MonId",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MonName",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": true,
+        "IsNullable": false
+      },
+      {
+        "Name": "Race",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "RaceImg",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Undead",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "CoolEye",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Appr",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Level",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Exp",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "HP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "AC",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MAC",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DC",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxDC",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MC",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SC",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Speed",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Hit",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "WalkSpd",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "AttackSpd",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "WalkStep",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "WalkWait",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "HolyMon",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MonGrade",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      }
+    ]
+  },
+  {
+    "Name": "stditems",
+    "DataBase": "mir3",
+    "Columns": [
+      {
+        "Name": "Idx",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AllowFlag",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "iname",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": true,
+        "IsNullable": false
+      },
+      {
+        "Name": "Stdmode",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Shape",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "RebornLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Quality",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedRec",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Looks",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Anicount",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLevel",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxDC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxMC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxSC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "AddHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "AddMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxPile",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "EqGroup",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecIdx_1",
+        "Type": "int8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecVal_1",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecIdx_2",
+        "Type": "int8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecVal_2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecIdx_3",
+        "Type": "int8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecVal_3",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecIdx_4",
+        "Type": "int8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecVal_4",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecLibIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecMin",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SpecMax",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "RecycleMat",
+        "Type": "int8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaterNum",
+        "Type": "int8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Price",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "RecycleExp",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      }
+    ]
+  },
+  {
+    "Name": "heromagic",
+    "DataBase": "mir3",
+    "Columns": [
+      {
+        "Name": "MagName",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": true,
+        "IsNullable": false
+      },
+      {
+        "Name": "MagicIdx",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "EffectType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Effect",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Spell",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Power",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxPower",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DefSpell",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DefPower",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DefMaxPower",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "job",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv1",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv2",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv3",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv4",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv5",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain1",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain2",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain3",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain4",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain5",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Delay",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      }
+    ]
+  },
+  {
+    "Name": "humanmagic",
+    "DataBase": "mir3",
+    "Columns": [
+      {
+        "Name": "MagicID",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MagName",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": true,
+        "IsNullable": false
+      },
+      {
+        "Name": "MagType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "EffectType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Effect",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Spell",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Power",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "MaxPower",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DefSpell",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DefPower",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DefMaxPower",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "SkillType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "DescIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv1",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv2",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv3",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv4",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedLv5",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain1",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain2",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain3",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain4",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "LvTrain5",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Delay",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "CoolTime",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      }
+    ]
+  },
+  {
+    "Name": "armyrankattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "armyrankitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemName1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemName2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "bossfirstkill",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "Idx",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AreaID",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MonName",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "KillerID",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "KillerName",
+        "Type": "string",
+        "StrLenMax": 31,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "PrizeState",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "KillTime",
+        "Type": "datetime",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "castles",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "Idx",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AreaID",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CastleName",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "OwnGuild",
+        "Type": "string",
+        "StrLenMax": 24,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "ChangeDate",
+        "Type": "date",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "WarDate",
+        "Type": "date",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "IncomeToday",
+        "Type": "date",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "TotalGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TodayIncome",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainDoorOpen",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainDoorHP",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LeftWallHP",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CenterWallHP",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "RightWallHP",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_3",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_4",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_5",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_6",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_7",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_8",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_9",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_10",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_11",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ArcherHP_12",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ModifyDate",
+        "Type": "datetime",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "castlewar",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "Idx",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AreaID",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AttFromArea",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AttGuildID",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AttGuildName",
+        "Type": "string",
+        "StrLenMax": 24,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AttDate",
+        "Type": "date",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "IsEnd",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "demonsealattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "nIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "demonsealitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "nIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedLingFu",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate3",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate4",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate5",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "dropitemspeclib",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "LibIdx",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "WeightRnd",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AttrIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Value1",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Value2",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Value3",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Value4",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Value5",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Value6",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "fashionconfig",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "FashionIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Job",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrFashionLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holyactive",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "GroupIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holygather",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "GroupIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holylvitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrHolyLv",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holyrunes",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "GroupIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "RuneOrd",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "RuneName",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holyskill",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "SkillID",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrSkillLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UnlockLv",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AddDC",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holyslave",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "SlaveLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SlaveName",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "HolyMinDC",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "HolyMaxDC",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "HolyMinAC",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "HolyMaxAC",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "HolyMaxHP",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecIdx1",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecVal1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecIdx2",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecVal2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecIdx3",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecVal3",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecIdx4",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SpecVal4",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holystarattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "GroupIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrStarLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "holystaritem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "GroupIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrStarLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "officattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrOfficLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "officitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrOfficLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextOfficLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedLv",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num1",
+        "Type": "int16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num2",
+        "Type": "int16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "rebornattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrRebornLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "rebornitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrRebornLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "DecLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedLv",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num1",
+        "Type": "int16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num2",
+        "Type": "int16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "refinebodyattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "refinebodyitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrRefineLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedLevel",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UpLvItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UpLvItemNum",
+        "Type": "int16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SuccessRate",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "rideconfig",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "RideIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrRideLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "sealofficeattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrSealLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "sealofficeitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrSealLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemName1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemName2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "shop",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "ShopIdx",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ShowOrder",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Page",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Job",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ShopName",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Price",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MoneyType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LimitDay",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LimitNum",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ShowFlag",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "speceqattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrSpecEqLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "speceqitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "nType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrSpecEqLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UpLvItemNum",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UpLvItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "starattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrStarLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SucRate",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecVal",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "strengattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrStrengLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SucRate",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecVal",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "sumpayprize",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "TypeIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MinPay",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "RebornIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Item1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Num1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Item2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Num2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Item3",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Num3",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Item4",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Num4",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Item5",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Num5",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "BackItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "BackNum",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "sxgradeattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrSXUpLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "sxgradeitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrSXUpLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "BaseRate",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AddRate",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "sxstrengattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nPlace",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrSXStrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SucRate",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecVal",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "tasklist",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "TaskID",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": true,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Type",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TaskName",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TaskProp",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "RecCondition",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "FinCondition1",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "FinCondition2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FinCondition3",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextTaskID",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "Prize1",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Prize2",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Prize3",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Prize4",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "Prize5",
+        "Type": "string",
+        "StrLenMax": 16,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      }
+    ]
+  },
+  {
+    "Name": "vipandmonth",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrAttrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "wingattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrWingLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "wingitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CurrWingLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "ItemNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "BaseRate",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate3",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate4",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate5",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate6",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate7",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate8",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate9",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "LvRate10",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "xinfaattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrXinFaLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "AC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMAC",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxHP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MaxMP",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "xinfaitem",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "nType",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrXinFaLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UpLvItemNum",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "UpLvItem",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedGold",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedLingFu",
+        "Type": "int32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  },
+  {
+    "Name": "zhenfaattr",
+    "DataBase": "gamedata",
+    "Columns": [
+      {
+        "Name": "CJob",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "nIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "CurrLv",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SucRate",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NextLvGold",
+        "Type": "uint32",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem1",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum1",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "NeedItem2",
+        "Type": "string",
+        "StrLenMax": 15,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": true
+      },
+      {
+        "Name": "NeedNum2",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMin",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "MainMax",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "FSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "SSpecVal",
+        "Type": "uint16",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecIdx",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      },
+      {
+        "Name": "TSpecVal",
+        "Type": "uint8",
+        "StrLenMax": 0,
+        "IsPriKey": false,
+        "IsUniKey": false,
+        "IsNullable": false
+      }
+    ]
+  }
+]
